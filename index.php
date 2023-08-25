@@ -20,9 +20,13 @@
             <?php
                 $th_col1="#";
                 $th_col2="Canción";
-                $th_col3="País de Origen";
+                $th_col3="País";
                 $th_col4="Autor";
                 $th_col5="Ritmo";
+                $th_col6="Letra";
+                $th_col7="Acordes";
+                $th_col8="Pista";
+
                 $andino_count=1;
                 $mexicano_count=1;
                 $fiesta_count=1;
@@ -43,6 +47,9 @@
                                 <th scope="col"><? echo $th_col3; ?></th>
                                 <th scope="col"><? echo $th_col4; ?></th>
                                 <th scope="col"><? echo $th_col5; ?></th>
+                                <th scope="col"><? echo $th_col6; ?></th>
+                                <th scope="col"><? echo $th_col7; ?></th>
+                                <th scope="col"><? echo $th_col8; ?></th>
                             </tr>
                             </thead>
                             <tbody>
@@ -57,6 +64,9 @@
                                 <td> <? echo $song["country"]; ?> </td>
                                 <td> <? echo $song["author"]; ?> </td>
                                 <td> <? echo $song["rhythm"]; ?></td>
+                                <td> <? echo $song["letter"]; ?></td>
+                                <td> <? echo $song["chords"]; ?></td>
+                                <td> <? echo $song["track"]; ?></td>
                             </tr>
                             <?php
                                     $peruano_count++;
@@ -80,21 +90,37 @@
                         <table class="table table-striped">
                             <thead>
                             <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Canción</th>
-                                <th scope="col">Pais origen</th>
-                                <th scope="col">Autor</th>
-                                <th scope="col">Ritmo</th>
+                                <th scope="col"> <? echo $th_col1; ?> </th>
+                                <th scope="col"><? echo $th_col2; ?></th>
+                                <th scope="col"><? echo $th_col3; ?></th>
+                                <th scope="col"><? echo $th_col4; ?></th>
+                                <th scope="col"><? echo $th_col5; ?></th>
+                                <th scope="col"><? echo $th_col6; ?></th>
+                                <th scope="col"><? echo $th_col7; ?></th>
+                                <th scope="col"><? echo $th_col8; ?></th>
                             </tr>
                             </thead>
                             <tbody>
+                            <?php
+                            $andino_count=1;
+                            foreach($response as $song){
+                                if($song["section"]=="andino"){
+                            ?>
                             <tr>
-                                <th scope="row">1</th>
-                                <td>Charanguito</td>
-                                <td>Bolivia</td>
-                                <td>-</td>
-                                <td>Huayno</td>
+                                <th scope="row"> <? echo $andino_count; ?> </th>
+                                <td> <? echo $song["song_name"]; ?> </td>
+                                <td> <? echo $song["country"]; ?> </td>
+                                <td> <? echo $song["author"]; ?> </td>
+                                <td> <? echo $song["rhythm"]; ?></td>
+                                <td> <? echo $song["letter"]; ?></td>
+                                <td> <? echo $song["chords"]; ?></td>
+                                <td> <? echo $song["track"]; ?></td>
                             </tr>
+                            <?php
+                                    $andino_count++;
+                                } //ends if
+                            }  //foreach ends
+                            ?>
                             
                             </tbody>
                         </table>
@@ -113,21 +139,37 @@
                         <table class="table table-striped">
                             <thead>
                             <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Canción</th>
-                                <th scope="col">Pais origen</th>
-                                <th scope="col">Autor</th>
-                                <th scope="col">Ritmo</th>
+                                <th scope="col"> <? echo $th_col1; ?> </th>
+                                <th scope="col"><? echo $th_col2; ?></th>
+                                <th scope="col"><? echo $th_col3; ?></th>
+                                <th scope="col"><? echo $th_col4; ?></th>
+                                <th scope="col"><? echo $th_col5; ?></th>
+                                <th scope="col"><? echo $th_col6; ?></th>
+                                <th scope="col"><? echo $th_col7; ?></th>
+                                <th scope="col"><? echo $th_col8; ?></th>
                             </tr>
                             </thead>
                             <tbody>
+                            <?php
+                            $mexicano_count=1;
+                            foreach($response as $song){
+                                if($song["section"]=="mexicano"){
+                            ?>
                             <tr>
-                                <th scope="row">1</th>
-                                <td>El final de nuestra historia</td>
-                                <td>México</td>
-                                <td>-</td>
-                                <td>Cumbia sonidera</td>
+                                <th scope="row"> <? echo $mexicano_count; ?> </th>
+                                <td> <? echo $song["song_name"]; ?> </td>
+                                <td> <? echo $song["country"]; ?> </td>
+                                <td> <? echo $song["author"]; ?> </td>
+                                <td> <? echo $song["rhythm"]; ?></td>
+                                <td> <? echo $song["letter"]; ?></td>
+                                <td> <? echo $song["chords"]; ?></td>
+                                <td> <? echo $song["track"]; ?></td>
                             </tr>
+                            <?php
+                                    $mexicano_count++;
+                                } //ends if
+                            }  //foreach ends
+                            ?>
                             
                             </tbody>
                         </table>
@@ -146,21 +188,37 @@
                         <table class="table table-striped">
                             <thead>
                             <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Canción</th>
-                                <th scope="col">Pais origen</th>
-                                <th scope="col">Autor</th>
-                                <th scope="col">Ritmo</th>
+                                <th scope="col"> <? echo $th_col1; ?> </th>
+                                <th scope="col"><? echo $th_col2; ?></th>
+                                <th scope="col"><? echo $th_col3; ?></th>
+                                <th scope="col"><? echo $th_col4; ?></th>
+                                <th scope="col"><? echo $th_col5; ?></th> 
+                                <th scope="col"><? echo $th_col6; ?></th>
+                                <th scope="col"><? echo $th_col7; ?></th>
+                                <th scope="col"><? echo $th_col8; ?></th>
                             </tr>
                             </thead>
                             <tbody>
+                            <?php
+                            $fiesta_count=1;
+                            foreach($response as $song){
+                                if($song["section"]=="fiesta"){
+                            ?>
                             <tr>
-                                <th scope="row">1</th>
-                                <td>El final de nuestra historia</td>
-                                <td>México</td>
-                                <td>-</td>
-                                <td>Cumbia sonidera</td>
+                                <th scope="row"> <? echo $fiesta_count; ?> </th>
+                                <td> <? echo $song["song_name"]; ?> </td>
+                                <td> <? echo $song["country"]; ?> </td>
+                                <td> <? echo $song["author"]; ?> </td>
+                                <td> <? echo $song["rhythm"]; ?></td>
+                                <td> <? echo $song["letter"]; ?></td>
+                                <td> <? echo $song["chords"]; ?></td>
+                                <td> <? echo $song["track"]; ?></td>
                             </tr>
+                            <?php
+                                    $fiesta_count++;
+                                } //ends if
+                            }  //foreach ends
+                            ?>
                             
                             </tbody>
                         </table>
