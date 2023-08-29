@@ -64,9 +64,33 @@
                                 <td> <? echo $song["country"]; ?> </td>
                                 <td> <? echo $song["author"]; ?> </td>
                                 <td> <? echo $song["rhythm"]; ?></td>
-                                <td> <? echo $song["letter"]; ?></td>
-                                <td> <? echo $song["chords"]; ?></td>
-                                <td> <? echo $song["track"]; ?></td>
+                                <td> <?php
+                                if($song["letter"]=="-"){
+                                    echo "-";
+                                }
+                                else{ ?>
+                                    <a href=" <? echo $song["letter"]; ?> " target="_blank">Link</a>
+                                    
+                                <?}?>
+                                </td>
+                                <td> <?php
+                                if($song["chords"]=="-"){
+                                    echo "-";
+                                }
+                                else{ ?>
+                                    <a href=" <? echo $song["chords"]; ?> " target="_blank">Link</a>
+                                    
+                                <?}?>
+                                </td>
+                                <td> <?php
+                                if($song["track"]=="-"){
+                                    echo "-";
+                                }
+                                else{ ?>
+                                    <a href=" <? echo $song["track"]; ?> " target="_blank">Link</a>
+                                    
+                                <?}?>
+                                </td>
                             </tr>
                             <?php
                                     $peruano_count++;
@@ -112,9 +136,33 @@
                                 <td> <? echo $song["country"]; ?> </td>
                                 <td> <? echo $song["author"]; ?> </td>
                                 <td> <? echo $song["rhythm"]; ?></td>
-                                <td> <? echo $song["letter"]; ?></td>
-                                <td> <? echo $song["chords"]; ?></td>
-                                <td> <? echo $song["track"]; ?></td>
+                                <td> <?php
+                                if($song["letter"]=="-"){
+                                    echo "-";
+                                }
+                                else{ ?>
+                                    <a href=" <? echo $song["letter"]; ?> " target="_blank">Link</a>
+                                    
+                                <?}?>
+                                </td>
+                                <td> <?php
+                                if($song["chords"]=="-"){
+                                    echo "-";
+                                }
+                                else{ ?>
+                                    <a href=" <? echo $song["chords"]; ?> " target="_blank">Link</a>
+                                    
+                                <?}?>
+                                </td>
+                                <td> <?php
+                                if($song["track"]=="-"){
+                                    echo "-";
+                                }
+                                else{ ?>
+                                    <a href=" <? echo $song["track"]; ?> " target="_blank">Link</a>
+                                    
+                                <?}?>
+                                </td>
                             </tr>
                             <?php
                                     $andino_count++;
@@ -161,9 +209,33 @@
                                 <td> <? echo $song["country"]; ?> </td>
                                 <td> <? echo $song["author"]; ?> </td>
                                 <td> <? echo $song["rhythm"]; ?></td>
-                                <td> <? echo $song["letter"]; ?></td>
-                                <td> <? echo $song["chords"]; ?></td>
-                                <td> <? echo $song["track"]; ?></td>
+                                <td> <?php
+                                if($song["letter"]=="-"){
+                                    echo "-";
+                                }
+                                else{ ?>
+                                    <a href=" <? echo $song["letter"]; ?> " target="_blank">Link</a>
+                                    
+                                <?}?>
+                                </td>
+                                <td> <?php
+                                if($song["chords"]=="-"){
+                                    echo "-";
+                                }
+                                else{ ?>
+                                    <a href=" <? echo $song["chords"]; ?> " target="_blank">Link</a>
+                                    
+                                <?}?>
+                                </td>
+                                <td> <?php
+                                if($song["track"]=="-"){
+                                    echo "-";
+                                }
+                                else{ ?>
+                                    <a href=" <? echo $song["track"]; ?> " target="_blank">Link</a>
+                                    
+                                <?}?>
+                                </td>
                             </tr>
                             <?php
                                     $mexicano_count++;
@@ -210,9 +282,34 @@
                                 <td> <? echo $song["country"]; ?> </td>
                                 <td> <? echo $song["author"]; ?> </td>
                                 <td> <? echo $song["rhythm"]; ?></td>
-                                <td> <? echo $song["letter"]; ?></td>
-                                <td> <? echo $song["chords"]; ?></td>
-                                <td> <? echo $song["track"]; ?></td>
+                                <td> <?php
+                                if($song["letter"]=="-"){
+                                    echo "-";
+                                }
+                                else{ ?>
+                                    <a href=" <? echo $song["letter"]; ?> " target="_blank">Link</a>
+                                    
+                                <?}?>
+                                </td>
+                                <td> <?php
+                                if($song["chords"]=="-"){
+                                    echo "-";
+                                }
+                                else{ ?>
+                                    <a href=" <? echo $song["chords"]; ?> " target="_blank">Link</a>
+                                    
+                                <?}?>
+                                </td>
+                                <td> <?php
+                                if($song["track"]=="-"){
+                                    echo "-";
+                                }
+                                else{ ?>
+                                    <a href=" <? echo $song["track"]; ?> " target="_blank">Link</a>
+                                    
+                                <?}?>
+                                </td>
+
                             </tr>
                             <?php
                                     $fiesta_count++;
