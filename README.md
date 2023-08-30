@@ -1,5 +1,10 @@
-## About:
+## FrontEnd for km songs API
 
-Static webpage that shows a list of kusimarka songs.  Made with bootstrap.
+PHP webpage that shows a list of kusimarka songs from [kmsongs API](https://github.com/scuamatzi/kmsongsapi).  
+Made with **bootstrap**.
 
-This is just the prototype, it will be done using FastApi to be able to create and modify records.
+`uri.json`  has the URL to get access to the API. It's hidden.
+
+It uses accordions to separate the type of rhythms that kusimarka can play.
+
+🔗 It includes links to some useful references about the song.
