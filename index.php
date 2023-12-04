@@ -34,7 +34,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="heading1">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapseOne">
-                        <b>Temas Peruanos</b>
+                        <b>Temas Peruanos (<span id="peruano_total"> 10 </span>)</b>
                     </button>
                 </h2>
                 <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionkm">
@@ -106,7 +106,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="heading2">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                        <b> Temas Andinos</b>
+                        <b> Temas Andinos (<span id="andino_total"> </span>)</b>
                     </button>
                 </h2>
                 <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionkm">
@@ -179,7 +179,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="heading3">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                        <b>Temas Mexicanos</b>
+                        <b>Temas Mexicanos (<span id="mexicano_total"> 5 </span>)</b>
                     </button>
                 </h2>
                 <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionkm">
@@ -252,7 +252,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="heading4">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                        <b>Temas para fiestas</b>
+                        <b>Temas para fiestas (<span id="fiesta_total"> 4 </span>)</b>
                     </button>
                 </h2>
                 <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionkm">
@@ -330,5 +330,11 @@
         
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+    document.getElementById("peruano_total").innerHTML="<?php echo $peruano_count-1 ?>"
+    document.getElementById("andino_total").innerHTML="<?php echo $andino_count-1 ?>"
+    document.getElementById("mexicano_total").innerHTML="<?php echo $mexicano_count-1 ?>"
+    document.getElementById("fiesta_total").innerHTML="<?php echo $fiesta_count-1 ?>"
+    </script>
 </body>
 </html>
